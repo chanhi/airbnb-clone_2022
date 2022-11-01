@@ -17,3 +17,13 @@ but with pipenv instead poetry
 "amenities": [1, 2],
 "kind": "private_room"
 }
+
+{
+"name": "experience test",
+"price": 6,
+"address": "Seoul",
+"start": "18:00:00",
+"end": "00:00:00",
+"category": 1,
+"perk": 1
+}

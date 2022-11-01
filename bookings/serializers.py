@@ -1,6 +1,7 @@
 from django.utils import timezone
 from rest_framework import serializers
 from .models import Booking
+from experiences.models import Experience
 
 
 class CreateRoomBookingSerializer(serializers.ModelSerializer):
@@ -41,6 +42,20 @@ class CreateRoomBookingSerializer(serializers.ModelSerializer):
                 "Those (or some) of those dates are already taken."
             )
         return data
+
+
+class CreateExperienceBookingSerializer(serializers.ModelSerializer):
+
+    experience_time = serializers.DateTimeField()
+    start = Experience.start
+    end = Experience.end
+
+    class Meta:
+        model = Booking
+        fields = (
+            "experience_time",
+            "guests",
+        )
 
 
 class PublicBookingSerializer(serializers.ModelSerializer):
