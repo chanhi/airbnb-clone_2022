@@ -11,6 +11,7 @@ strawberry-graphql = {extras = ["debug-server"], version = "*"}
 strawberry-graphql-django = "*"
 pyjwt = "*"
 django-environ = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 black = "*"
