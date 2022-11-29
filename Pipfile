@@ -12,6 +12,7 @@ strawberry-graphql-django = "*"
 pyjwt = "*"
 django-environ = "*"
 django-cors-headers = "*"
+requests = "*"
 
 [dev-packages]
 black = "*"
